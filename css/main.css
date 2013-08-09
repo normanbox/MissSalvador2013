@@ -1,0 +1,426 @@
+/* ==========================================================================
+   Miss El Salvador-USA 2013 
+   ========================================================================== */
+
+/*
+ * Loading Google Web Fonts.  
+ */
+@import url(http://fonts.googleapis.com/css?family=Kameron:400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+
+
+/*
+ * Loading Google Web Fonts.  
+ */
+body {
+	background: #000 url(../img/bg-page.jpg) no-repeat top center fixed;
+	background-size: cover;
+	color: #ccc;
+	font-family: 'PT Sans', sans-serif;
+	text-shadow: 1px 1px 0 #000;
+	font-size: 16px
+}
+
+a {
+	color: #f9409f;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+	font-family: 'Kameron', serif;
+	font-size: 3.4em;
+	text-transform: uppercase;
+	padding: 0 0;
+
+}
+
+header {
+	height: 250px;
+}
+
+header .main-logo {
+	padding: 25px
+}
+
+section {
+	margin-bottom: 100px
+}
+
+
+section .head {
+	margin-bottom: 50px;
+}
+
+footer {
+	text-align: center;
+	color: #434546;
+	 
+}
+
+
+footer .jennifer-international {
+	color: #e27191
+}
+
+footer a { 
+	color: #7bbcef;
+}
+
+/* Formularios */
+
+label {
+ 	color: #ccc;
+ 	font-size: 18px;
+ 	text-transform: uppercase;
+ 	padding-bottom: 10px;
+}
+
+
+/**
+ * Rotador de Patrocinadores
+ */
+
+.rotador-patrocinadores {
+	background: transparent url("../img/fondo-rotador-de-patrocinadores.png") no-repeat;
+	height: 145px;
+	margin-top: 60px;
+	width: 587px;
+}
+
+.rotador-patrocinadores img {
+	 margin: 22px 0 0 10px
+}
+
+
+/**
+ * Candidatas
+ */
+
+
+#candidatas > .row {
+	margin-bottom: 50px
+}
+
+#candidatas h1 
+{
+	color: #7bbcef;
+	padding: 50px
+}
+
+#candidatas h2 {
+	color: #f9409f;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 0;
+	position: relative;
+	margin-top: -8px;
+}
+
+#candidatas .foto {
+	float: left;
+	margin-right: 10px;
+}
+
+#candidatas .foto img {
+	border: 1px  solid #2d353a;
+}
+
+#candidatas .info {
+	padding-left: 108px;
+}
+
+#candidatas .info .localidad {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.2em
+}
+
+#candidatas .btn-secundario {
+	display: none;
+}
+
+
+/**
+ * Galeria 
+ */
+
+#galeria .proximamente { 
+	background-color: #000;
+	border: 1px solid #2d353a;
+	padding: 300px 0px;
+	text-align: center;
+	font-size: 60px;
+	opacity: 0.5;
+	text-transform:uppercase;
+	color: #333;
+}
+
+/**
+ * Eventos 
+ */
+ 
+#eventos .evento {
+	padding: 25px 0;
+	border-top: 1px solid #f9409f;
+
+	border-bottom: 1px solid #f9409f;
+}
+
+#eventos .fecha {
+	background: transparent url(../img/cal-icon.png) no-repeat 0 5px;
+	color: #fff;
+	font-size: 28px;
+	padding: 15px 64px;
+	text-transform: uppercase;
+}
+
+#eventos h2 {
+	color: #f9409f;
+	font-family: 'PT Sans', sans-serif;	
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 100%;
+	text-transform: uppercase;	
+	margin: 0;
+	padding: 10px 0;
+}
+
+#eventos .content p {
+	color: #606060;
+	line-height: 120%;
+ 	font-size: 24px;
+	text-transform: uppercase;
+}
+
+
+/**
+ * Noticias 
+ */
+
+.sin-noticias {
+	padding: 80px 20px;
+	font-size: 30px;
+	color: #666;
+	text-align: center;
+}
+
+/**
+ * Patrocinadores 
+ */
+
+ #patrocinadores .logos {
+ 	margin: 50px 0
+ }
+
+/**
+ * Contactanos 
+ */
+
+ #contactanos .row {
+ 	margin-bottom: 20px;
+ }
+
+#contactanos .mensaje-gracias {
+	color: #666;
+	display: none;
+	font-size: 60px;
+	text-align: center;
+	padding: 100px 0;
+	
+}
+#contactanos .mensaje-gracias span {
+	color: #ccc;
+}
+
+
+/**
+ * Volver al inicio 
+ */
+
+#fixed-bar {
+    margin: 0;
+    padding: 0;
+    right: 50px;    
+    z-index: 100;
+}
+#fixed-bar a {
+    color: white;
+    text-decoration: none;
+    background-color: #ff4daa;
+    display: block;
+    width: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    float: right;
+    right: 20px;
+
+}
+#bar-inner {
+     
+    margin: 0 auto;
+    height: 36px;
+    line-height: 36px;
+}
+
+
+
+
+/**
+ * Ventana Modal Personalizada
+ */
+
+.modal {
+	background-color: #13181a
+}
+
+.modal .modal-header {
+	text-align: center;
+	border: 0;
+}
+
+.modal .modal-header {
+	border-top: 10px solid #7bbcef;
+
+}
+
+.modal .modal-header h3 {
+	color: #7bbcef;
+	font-size: 3.4em;
+	font-family: 'Kameron', serif;
+	padding: 25px 0; 
+	text-transform: uppercase;
+
+}
+
+
+.modal .modal-footer {
+	text-align: center;
+}
+
+.modal .modal-footer .btn-secundario {
+	display: inline-block !important;
+}
+
+
+/**
+ * Navbar 
+ */
+
+.navbar-wrapper {
+	text-transform: uppercase;
+	background: transparent url("../img/bg-navbar.png") top center no-repeat;
+	text-align: center;
+	padding: 12px 0 15px;
+}
+
+.navbar {
+	background: none;
+	text-transform: uppercase;
+ }
+
+.navbar .brand {
+	display: none;
+	text-shadow: none;
+	color: #fff;
+	background-color: #7bbcef
+}
+
+.navbar .navbar-inner {
+	background: none;
+	border: none;
+}
+
+.navbar .nav>li>a {
+	text-shadow: none;
+	font-size: 1.6em;
+	color: #fff;
+	padding: 10px 18px 10px;
+}
+
+.navbar .nav>li.active a {
+	background: none;
+	color: #ffcd1e ;
+}
+
+.navbar .nav>li>a:hover {
+	color: #ffd74b;
+}
+
+
+
+/**
+ * Clases Genericas 
+ */
+
+.subtitulo { 
+	color: #7bbcef;
+	font-family: 'Kameron', serif;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 100%
+}
+
+.btn-default {
+	background-color: #87ac31;
+	box-shadow: 0px 4px 0 #648f00;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0.35em 1.25em;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #65841b;	
+}
+
+.btn-default.large {
+	padding: 15px 30px;
+}
+
+
+.btn-default:hover {
+	background-color: #97c136;
+	color: #fff;
+}
+
+.btn-secundario {
+	margin-left: 10px;
+	background-color: #0e0e0e;
+	box-shadow: 0px 4px 0 #050607;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0.35em 1.25em;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #000;	
+}
+
+.btn-secundario:hover {
+	background-color: #151515;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+

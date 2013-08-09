@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Norman Cossio -- Web Designer -- @normanbox
+    Hipolito Obeso -- Web Developer -- @PoloLs
+    Cristhian Amador -- Content Manager -- @crisnoir
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
