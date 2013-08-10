@@ -9,13 +9,13 @@
         <div class="row">
             <div class="span3 offset1">
                 <label for="">Nombre Completo</label>
-                <input type="text" placeholder=" " class="span3">
+                <input type="text" placeholder=" " class="span3" id='txtName'>
             </div>
         </div>
         <div class="row">
             <div class="span3 offset1">
                 <label for="">Correo Electrónico</label>
-                <input type="text" placeholder="" class="span3">
+                <input type="text" placeholder="" class="span3" id = 'txtMail' >
             </div>
         </div>
 
@@ -23,7 +23,7 @@
 
   </div>
   <div class="modal-footer">
-    <a href="#" class="btn-default">Enviar mi Voto</a>
+    <a href="#" class="btn-default" onClick='doVotePop();return false;' data-dismiss="modal">Enviar mi Voto</a>
     <a href="#" class="btn-secundario" data-dismiss="modal">Cancelar</a>
   </div>
 </div>

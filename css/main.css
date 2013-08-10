@@ -153,10 +153,10 @@ label {
 	border: 1px solid #2d353a;
 	padding: 300px 0px;
 	text-align: center;
-	font-size: 60px;
+	font-size: 2em;
 	opacity: 0.5;
 	text-transform:uppercase;
-	color: #333;
+	color: #666;
 }
 
 /**
