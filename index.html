@@ -144,7 +144,7 @@
                         <div class="info">
                             <h2 style="font-size: 26px">Franshesca Ramirez</h2>
                             <p class="localidad">Los Angeles</p>
-                            <p><a class="btn-default" href="votar.html" data-toggle="modal">Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
+                            <p><a class="btn-default" href="votar.html" data-toggle="modal" onClick='setcandidate(10);return false;'>Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
                         </div>
                     </div>                        
                 </div> <!--  end: .row -->
@@ -157,7 +157,7 @@
                         <div class="info">
                             <h2>Gigi Constanza</h2>
                             <p class="localidad">San Miguel</p>
-                            <p><a class="btn-default" href="votar.html" data-toggle="modal">Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
+                            <p><a class="btn-default" href="votar.html" data-toggle="modal" onClick='setcandidate(11);return false;'>Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
                         </div>
                     </div>
                     <div class="span4">
@@ -167,7 +167,7 @@
                         <div class="info">
                             <h2>Ivette Moreira</h2>
                             <p class="localidad">San Vicente</p>
-                            <p><a class="btn-default" href="votar.html" data-toggle="modal">Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
+                            <p><a class="btn-default" href="votar.html" data-toggle="modal" onClick='setcandidate(12);return false;'>Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
                         </div>
                    </div>
                     <div class="span4">
@@ -223,7 +223,7 @@
                         <div class="info">
                             <h2>Sthephanie Chicas</h2>
                             <p class="localidad">Santa Ana</p>
-                            <p><a class="btn-default" href="votar.html" data-toggle="modal">Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
+                            <p><a class="btn-default" href="votar.html" data-toggle="modal" onClick='setcandidate(13);return false;'>Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
                         </div>
                     </div>
                     <div class="span4">
@@ -233,7 +233,7 @@
                         <div class="info">
                             <h2>Vanessa Guardado</h2>
                             <p class="localidad">Chalatenango</p>
-                            <p><a class="btn-default" href="votar.html" data-toggle="modal">Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
+                            <p><a class="btn-default" href="votar.html" data-toggle="modal" onClick='setcandidate(14);return false;'>Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
                         </div>
                    </div>
                     <div class="span4">
@@ -243,7 +243,7 @@
                         <div class="info">
                             <h2>Yoselyn Zelaya</h2>
                             <p class="localidad">La Unión</p>
-                            <p><a class="btn-default" href="votar.html" data-toggle="modal">Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
+                            <p><a class="btn-default" href="votar.html" data-toggle="modal" onClick='setcandidate(15);return false;'>Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
                         </div>
                     </div>                        
                 </div> <!--  end: .row -->
@@ -325,30 +325,30 @@
                         <div class="row">
                             <div class="span4 offset2">
                                 <label>Nombre Completo</label>
-                                <input type="text" placeholder="Escribe tu nombre completo" class="span4">
+                                <input type="text" id="txtContactName" placeholder="Escribe tu nombre completo" class="span4">
                             </div>
 
                             <div class="span4">              
                                 <label>Dirección de Email</label>
-                                <input type="text" placeholder="Escribe tú correo electrónico" class="span4">
+                                <input type="text" id="txtContactEmail" placeholder="Escribe tú correo electrónico" class="span4">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="span4 offset2">
                                 <label>Ciudad</label>
-                                <input type="text" placeholder="Escribe tu ciudad de origen" class="span4">
+                                <input type="text" id="txtContactCity" placeholder="Escribe tu ciudad de origen" class="span4">
                             </div>
                             <div class="span4">
                                 <label>Número de Teléfono </label>
-                                <input type="text" placeholder="Escribe tu número telefónico" class="span4">    
+                                <input type="text" id="txtContactPhone" placeholder="Escribe tu número telefónico" class="span4">    
                             </div>
                         </div>
                         
                         <div class="row">
-                            <div class="span4 offset2">
+                            <div class="span4 offset2" >
                                 <label>Sexo</label>
-                                <select class="span4">
+                                <select class="span4" id="cmdSex">
                                   <option></option>
                                   <option>Hombre</option>
                                   <option>Mujer</option>                      
@@ -356,12 +356,12 @@
                             </div>
                             <div class="span4">                            
                                 <label>Edad</label>
-                                <input type="text" placeholder="Escribe tu edad" class="span2" >
+                                <input type="text" id="txtContactAge" placeholder="Escribe tu edad" class="span2" >
 
                             </div>
                         </div>
                         <div class="row text-center">
-                            <a href="#" class=" btn-default large">Enviar comentario</a>
+                            <a href="#" onclick="saveContactInfo();return false;" class=" btn-default large">Enviar comentario</a>
                         </div>
                     </div> <!-- end: .formulario -->
 
@@ -407,13 +407,13 @@
         </script>
 
         
-        <!--
+         
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            var _gaq=[['_setAccount','UA-43121069-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script> 
-        -->
+        
     </body>
 </html>

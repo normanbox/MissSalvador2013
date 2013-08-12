@@ -77,6 +77,16 @@ label {
  	padding-bottom: 10px;
 }
 
+textarea, input[type="text"], 
+input[type="email"] { 
+	padding: 10px !important;
+}
+
+
+#cmdSex {
+	height: auto !important;
+	padding: 10px;
+} 
 
 /**
  * Rotador de Patrocinadores

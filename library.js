@@ -160,6 +160,32 @@ function loadvotes(id)
 		}
 	});
 }
+function saveContactInfo()
+{
+	var Contactinfo = Parse.Object.extend("contactInfo");
+			var contact = new Contactinfo();
+
+			contact.set("contacName", $('#txtContactName').val());
+			contact.set("contaccEmail", $('#txtContactEmail').val());
+			contact.set("contacCity", $('#txtContactCity').val());
+			contact.set("contactPhone", $('#txtContactPhone').val());
+			contact.set("sex", $('#cmdSex').val());
+			contact.set("contactAge", $('#txtContactAge').val());
+			
+
+			contact.save(null, {
+				success : function(contact) {
+					// Execute any logic that should take place after the object is saved.
+					alert("Informacion Registrada");
+					
+				},
+				error : function(votescore, error) {
+					// Execute any logic that should take place if the save fails.
+					// error is a Parse.Error with an error code and description.
+					alert('Los sentimos, ocurrio un error. :: ' + error.description);
+				}
+			});
+}
 
 function test() {
 	//return;
