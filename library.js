@@ -120,22 +120,59 @@ else
   {return false;}
 } 
 
+
+function loadvotesPrivate(countVotes,id)
+	{
+		document.getElementById("vot" + id).innerHTML = "Cargando votos...";
+		var VoteScore = Parse.Object.extend("VoteScoreShe");
+		var query = new Parse.Query(VoteScore);
+		query.equalTo("voteid", id);
+
+
+		//query.equalTo("score", 1);
+	
+	query.count({
+  success: function(count) {
+    
+    var num = 0;
+    num = (count / countVotes) * 100;
+    
+  	document.getElementById("vot" + id).innerHTML = Math.round(num).toString() + "%";
+ 
+	document.getElementById("percentC" + id).style.width = Math.round(num).toString() + "%";
+
+
+  },
+  error: function(error) {
+    // The request failed
+  }
+});
+	}
+
 function loadvotes(id)
 {
-	document.getElementById("vot" + id).innerHTML = "Loading...";
+	document.getElementById("vot" + id).innerHTML = "Cargando votos...";
 	var VoteScore = Parse.Object.extend("VoteScoreShe");
 	var query = new Parse.Query(VoteScore);
-	query.equalTo("voteid", id);
+	//query.equalTo("voteid", id);
+	query.equalTo("score", 1);
+	
+	query.count({
+  success: function(count) {
+    // The count request succeeded. Show the count
+   // alert("Sean has played " + count + " games");
+  	loadvotesPrivate(count,id);
+  
+  },
+  error: function(error) {
+    // The request failed
+  }
+});
+	
+	return;
 	query.find({
 		success : function(results) {
-			//alert("Successfully retrieved " + results.length + " scores.");
-			// Do something with the returned Parse.Object values
-			/*
-			for (var i = 0; i < results.length; i++) {
-				var object = results[i];
-				alert(object.id + ' - ' + object.get('playerName'));
-			}
-		*/
+			
 		
 		var num = 0; 
 		
@@ -188,7 +225,7 @@ function saveContactInfo()
 }
 
 function test() {
-	//return;
+	return;
 	var TestObject = Parse.Object.extend("TestObject");
 	var testObject = new TestObject();
 	testObject.save({

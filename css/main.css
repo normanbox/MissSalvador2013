@@ -141,6 +141,7 @@ input[type="email"] {
 
 #candidatas .info {
 	padding-left: 108px;
+	min-height: 115px
 }
 
 #candidatas .info .localidad {
@@ -151,6 +152,40 @@ input[type="email"] {
 
 #candidatas .btn-secundario {
 	display: none;
+}
+
+#candidatas .medidor-de-votos {
+	background-color: #491630;
+	height: 15px;
+	margin: 4px 0;
+
+}
+
+#candidatas .medidor-de-votos .porcentaje {
+	background: #f9409f;
+	background: -moz-linear-gradient(top,  #f9409f 0%, #c4327d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9409f), color-stop(100%,#c4327d));
+	background: -webkit-linear-gradient(top,  #f9409f 0%,#c4327d 100%);
+	background: -o-linear-gradient(top,  #f9409f 0%,#c4327d 100%);
+	background: -ms-linear-gradient(top,  #f9409f 0%,#c4327d 100%);
+	background: linear-gradient(to bottom,  #f9409f 0%,#c4327d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9409f', endColorstr='#c4327d',GradientType=0 );
+	box-shadow: 0 0 10px #f9409f;
+ 	height: 15px;
+ 	width: 0%;
+ 	float: left;
+}
+
+#vot1, #vot2, #vot3, #vot4, #vot5,
+#vot6, #vot7, #vot8, #vot9, #vot10,
+#vot11, #vot12, #vot13, #vot14, #vot15 {
+	color: #fff000;
+	font-size: 18px;
+	padding: 4px;
+ 	position: absolute;
+	background-color: #69143f;
+	margin-top: -8px;
+	border: 1px solid #8a1551;
 }
 
 
