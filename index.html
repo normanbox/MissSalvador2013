@@ -4,25 +4,52 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Miss El Salvador - USA 2013</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">        
         <link rel="stylesheet" href="css/bootstrap-responsive.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/elastislide.css" />        
 
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
 		<script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
 		<script type="text/javascript" src="library.js" language="javascript"></script>
+        <noscript>
+            <style>
+                .es-carousel ul{
+                    display:block;
+                }
+            </style>
+        </noscript>
+        <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">    
+            <div class="rg-image-wrapper">
+                {{if itemsCount > 1}}
+                    <div class="rg-image-nav">
+                        <a href="#" class="rg-image-nav-prev">Previous Image</a>
+                        <a href="#" class="rg-image-nav-next">Next Image</a>
+                    </div>
+                {{/if}}
+                <div class="rg-image"></div>
+                <div class="rg-loading"></div>
+                <div class="rg-caption-wrapper">
+                    <div class="rg-caption" style="display:none;">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </script>        
     </head>
     <body>
 	<script>
 	var candidateId = 0;
 			init();
-
+			
+checkDomain();
 		</script>
 	
         <a name="inicio"></a>
@@ -282,7 +309,7 @@
                             <img src="img/candidatas/sthephanie-chicas.jpg">
                         </div>
                         <div class="info">
-                            <h2>Sthephanie Chicas</h2>
+                            <h2>Stephanie Chicas</h2>
                             <p class="localidad">Santa Ana </p>
                             <p><a class="btn-default" href="votar.html" data-toggle="modal" onClick='setcandidate(13);return false;'>Votar</a><a class="btn-secundario" href="#">Más Información</a></p>
                         </div>
@@ -337,7 +364,44 @@
                     <p class="subtitulo">Fotografias de Eventos y Actividades</p>
                 </div>
                 <div class="content">
-                    <div class="proximamente">Proximamente</div>    
+                    
+                <div id="rg-gallery" class="rg-gallery">
+                    <div class="rg-thumbs">
+                        <!-- Elastislide Carousel Thumbnail Viewer -->
+                        <div class="es-carousel-wrapper">
+                            <div class="es-nav">
+                                <span class="es-nav-prev">Previous</span>
+                                <span class="es-nav-next">Next</span>
+                            </div>
+                            <div class="es-carousel">
+                                <ul>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-001.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-001.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-002.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-002.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-003.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-003.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-004.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-004.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-005.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-005.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-006.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-006.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-007.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-007.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-008.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-008.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-009.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-009.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-010.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-010.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-011.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-011.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-012.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-012.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-013.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-013.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-014.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-014.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-015.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-015.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-016.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-016.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-017.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-017.jpg" alt="" data-description="" /></a></li>
+                                    <li><a href="#"><img src="galeria/thumbs/miss-el-salvador-usa-2013-set1-018.jpg" data-large="galeria/miss-el-salvador-usa-2013-set1-018.jpg" alt="" data-description="" /></a></li>                    
+
+                                     
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Elastislide Carousel Thumbnail Viewer -->
+                    </div><!-- rg-thumbs -->
+                </div><!-- rg-gallery -->
+
                 </div>                
             </section> <!-- end: #galeria -->
  
@@ -479,6 +543,11 @@
 
         <script src="js/main.js"></script>
         <script src='js/jquery.scrollto.js'></script>
+        <script src="js/jquery.tmpl.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.elastislide.js"></script>
+        <script src="js/gallery.js"></script>
+
         <script>
             $('.navbar ul.nav a').click(function(e){
                 $('html,body').scrollTo(this.hash, this.hash);

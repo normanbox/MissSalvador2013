@@ -10,12 +10,12 @@ $(document).ready(function() {
 		});
 	});
 
+ 
+
 
 	 $("#fixed-bar")
 	    .css({position:'fixed',bottom:'0px'})
 	    .hide();
-
- 
 
 
 	$(window).scroll(function () {

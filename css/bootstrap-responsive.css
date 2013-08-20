@@ -457,8 +457,16 @@
     margin-left: 0;
   }
 }
-
+@media (min-width: 979px) and (max-width: 1200px) {
+  /* Ajustamos el tamaño de la fuente del menu principal */
+  .navbar .nav>li>a {
+    padding: 10px 10px 10px !important;
+    font-size: 22px !important;
+  }
+}
 @media (min-width: 768px) and (max-width: 979px) {
+
+
   .row {
     margin-left: -20px;
     *zoom: 1;

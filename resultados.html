@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">        
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+        <![endif]-->
+		<script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
+		<script src="library.js" language="javascript"></script>
+
+		<style>
+
+			.head {
+				padding: 20px;
+				text-align: center;
+			}
+			
+			.table tr td {
+				font-size: 24px;
+			}
+
+			.table tr td.nvotos {
+				color: #fff000;
+			}
+
+			.table th, .table td {
+				color: #f9409f;
+				text-transform: uppercase;
+			}
+
+			.table tr:hover {
+				background-color: #000;
+			}
+
+			.totales {
+				font-size: 40px;
+				padding: 20px 0 60px;
+				color: #fff;
+				line-height: 100%;
+			}
+
+			.totales #totaldevotos {
+				font-weight: bold;
+				color: #fff000
+			}
+
+		</style>
+
+    </head>
+    <body>
+
+		<script>
+			init();
+		</script>
+
+		<div class="container">
+
+			<div class="head"><img src="img/main-logo.png" alt="Miss El Salvador-USA 2013"></div>
+			
+			<br>
+			<h1>Tabla de Resultados</h1>
+			<br>
+
+			<div class="row">
+				<div class="span8 offset2">
+					<div id="content">
+						<span id="lblmsg">Cargando resultados...</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="span12 text-center totales"> Votos totales: <span id="totaldevotos">Cargando...</span></div>
+			</div>
+
+
+            <footer>
+                <p><img src="img/logo-jennifer.png" alt="Jennifer International Events"></p>
+                <p><span class="jennifer-international">Miss El Salvador-USA 2013 es un evento organizado por Jennifer International Events.</span><br>
+                Copyright &copy; 2013 Jennifer International Events. All Rights Reserved.</p>
+                <p>Diseño y Desarrollo Web por <a href="http://movilpresto.com" target="_blank" title="Agencia de desarrollo especializada en soluciones móviles">Móvil Presto - Soluciones Móviles</a>.</p>
+            </footer>
+
+		</div>
+
+		<script>
+			loadReport();
+			totalVote();
+		</script>
+
+	</body>
+</html>
+
