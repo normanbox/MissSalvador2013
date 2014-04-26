@@ -1,5 +1,5 @@
 function init() {
-	Parse.initialize("5hMF1NvusVsToSS4oZigavhlztvTcOBklhD5mjCS", "4Kegwn8USK2AUJyQgPAprt6lzLYJKUnPegyZzDZC");
+	Parse.initialize(" ", " ");
 }
 
 function setcandidate(id)
